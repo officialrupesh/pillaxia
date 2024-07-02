@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FooterWrapper } from "./styled-components/Footer.styled";
 import Image from "next/image";
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from "../../public/images/icons/Icons";
 
 const Footer = () => {
     return (
@@ -17,8 +18,8 @@ const Footer = () => {
                                 </p>
                             </div>
                             <div className="col-lg-8 col-12">
-                                <div className="row">
-                                    <div className="col-12 col-md-4 footer-item">
+                                <div className="row g-4 text-center text-sm-start">
+                                    <div className=" col-12 col-sm-6 col-md-4 footer-item">
                                         <h3>Useful Links</h3>
                                         <ul className="list-unstyled">
                                             <li>
@@ -35,7 +36,7 @@ const Footer = () => {
                                             <li> <Link href={"#"}>Contact Us</Link></li>
                                         </ul>  
                                     </div>
-                                    <div className="col-12 col-md-4 footer-item">
+                                    <div className="col-12 col-sm-6 col-md-4 footer-item">
                                         <h3>Card Section</h3>
                                         <ul className="list-unstyled">
                                             <li>
@@ -53,21 +54,27 @@ const Footer = () => {
                                         </ul>
                                     </div>
 
-                                    <div className="col-12 col-md-4 footer-item">
+                                    <div className="col-12 col-sm-6 col-md-4 footer-item">
+                                        <h3>Contact us</h3>
                                         <ul className="list-unstyled mb-3">
                                             <li>
-                                                <Link href={"#"}>connect@pillaxia.com</Link>
+                                                <Link href={"mailto:connect@pillaxia.com"} >connect@pillaxia.com</Link>
                                             </li>
                                             <li>
 
-                                                <Link href={"#"}>+1-900-123 4567</Link>
+                                                <Link href={"tel:+1-900-123 4567"}>+1-900-123 4567</Link>
 
                                             </li>
                                         </ul>
                                         <div className="social-media-wrapper d-flex gap-4">
                                             <Link href={"#"} className="social-media-item d-flex justify-content-center align-items-center">
-                                            f
-
+                                                <FacebookIcon />
+                                            </Link>
+                                            <Link href={"#"} className="social-media-item d-flex justify-content-center align-items-center">
+                                                <LinkedinIcon />
+                                            </Link>
+                                            <Link href={"#"} className="social-media-item d-flex justify-content-center align-items-center">
+                                                <InstagramIcon />
                                             </Link>
 
                                         </div>

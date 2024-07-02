@@ -1,6 +1,7 @@
 import Image from "next/image"
 import HeaderStyled from "./styled-components/Header.styled"
 import Link from "next/link"
+import { ArrowRightIcon } from "../../public/images/icons/Icons"
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
             <div className="nav-section">
             </div>
             <button className=" btn btn-join">
-                Join us
+                Join us <span className="ms-2"><ArrowRightIcon /></span>
 
             </button>
 

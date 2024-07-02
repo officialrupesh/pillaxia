@@ -64,6 +64,9 @@ h6{
     outline: none;
     border: none;
     transition:  0.4s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn-join{
     background: #25AFFC !important;
