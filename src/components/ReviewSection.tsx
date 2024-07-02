@@ -21,6 +21,19 @@ const ReviewSection = () => {
         cssEase: "linear",
         arrows: false,
         pauseOnHover: true,
+        appendDots: (dots: any) => (
+            <div style={{
+                borderRadius: "10px",
+                padding: "10px"
+            }}>
+                <ul className="custom-dots d-flex justify-content-center"> {dots} </ul>
+
+            </div>
+        ),
+        customPaging: (i: any) => (
+            <div>
+            </div>
+        )
     };
 
     return (
@@ -37,11 +50,19 @@ const ReviewSection = () => {
                     </div>
                     <Slider {...settings}>
                         <div className="review-box-wrapper d-flex justify-content-center">
-                            <div className="review-box" style={{ padding: "48px" }}>
-                                <div className="reviewer-name">
-                                    <h3 className="fw-700">
+                            <div className="review-box d-flex align-items-center">
+                                <div className="reviewer-img reviewer-img-mobile">
+                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
+                                </div>
+                                <div className="reviewer-img">
+                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
+                                </div>
+                                <div className="reviewer-details">
+                                    <h4 className="fw-bold">
                                         Debbie Hagenes
-                                    </h3>
+                                    </h4>
+                                    <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                    <h5 className="fw-normal" style={{ color: "#B9C8F3" }}>5.0 rating</h5>
 
 
                                 </div>
@@ -49,24 +70,48 @@ const ReviewSection = () => {
                             </div>
                         </div>
                         <div className="review-box-wrapper d-flex justify-content-center">
-                            <div className="review-box" style={{ padding: "48px" }}>
-                                <div className="reviewer-img">
-                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160}/>
-
+                            <div className="review-box d-flex align-items-center">
+                                <div className="reviewer-img reviewer-img-mobile">
+                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
                                 </div>
-                                <div className="reviewer-name">
-                                    <h3 className="fw-700">
+                                <div className="reviewer-img">
+                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
+                                </div>
+                                <div className="reviewer-details">
+                                    <h4 className="fw-bold">
                                         Debbie Hagenes
-                                    </h3>
-                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                    <h5>5.0 rating</h5>
+                                    </h4>
+                                    <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                    <h5 className="fw-normal" style={{ color: "#B9C8F3" }}>5.0 rating</h5>
 
 
                                 </div>
 
                             </div>
                         </div>
-                      
+                        <div className="review-box-wrapper d-flex justify-content-center">
+                            <div className="review-box d-flex align-items-center">
+                                <div className="reviewer-img reviewer-img-mobile">
+                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
+                                </div>
+                                <div className="reviewer-img">
+                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
+                                </div>
+                                <div className="reviewer-details">
+                                    <h4 className="fw-bold">
+                                        Debbie Hagenes
+                                    </h4>
+                                    <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                    <h5 className="fw-normal" style={{ color: "#B9C8F3" }}>5.0 rating</h5>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
                     </Slider>
                 </div>
             </ReviewSectionWrapper>

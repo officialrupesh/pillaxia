@@ -3,7 +3,7 @@ import CardSection from "@/components/CardSection";
 import Footer from "@/components/Footer";
 import GlobalStyled from "../../globalStyled";
 import Attributes from "@/components/Attributes";
-// import ReviewSection from "@/components/ReviewSection";
+import ReviewSection from "@/components/ReviewSection";
 import ContactSection from "@/components/ContactSection";
 import AiDrivenSection from "@/components/AiDrivenSection";
 import HeroSection from "@/components/HeroSection";
@@ -16,7 +16,7 @@ export default function Home() {
     <Attributes />
     <AiDrivenSection />
     <ChoosePillaxia />
-    {/* <ReviewSection /> */}
+    <ReviewSection />
     <ContactSection />
       <Footer />
     </>

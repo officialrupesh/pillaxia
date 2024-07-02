@@ -97,10 +97,24 @@ export const ReviewSectionWrapper = styled.section`
   background: #f6f4fe;
   color: #333b52;
   padding-block: 50px 120px;
+  .custom-dots {
+    gap: 9px;
+    .slick-active div {
+      background: #333B52;
+    }
+    div {
+      margin-top: 50px;
+      width: 32px;
+      height: 6px;
+      background: #25affc;
+      border-radius: 4px;
+    }
+  }
   .review-box {
     background: #1f235b;
     max-width: 800px;
     width: 100%;
+    padding: 30px;
     color: #ffffff;
     border-radius: 16px;
     /* overflow: hidden; */
@@ -117,5 +131,11 @@ export const ReviewSectionWrapper = styled.section`
     left: -50px;
     bottom: -30px;
     height: 190px;
+  }
+  .reviewer-img-mobile {
+    position: unset;
+    min-width: 160px;
+    margin-right: 40px;
+    visibility: hidden;
   }
 `;

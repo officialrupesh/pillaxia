@@ -43,6 +43,10 @@ h2{
     line-height: 1.3;
     font-weight: 700;
 }
+h4{
+    font-size: 2.4rem;
+    line-height: 1.3;
+}
 h5{
     font-size: 2rem;
     line-height: 1.3;
