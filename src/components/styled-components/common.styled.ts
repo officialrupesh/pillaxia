@@ -93,3 +93,29 @@ export const HeroSectionWrapper = styled.section`
 `;
 
 
+export const ReviewSectionWrapper = styled.section`
+  background: #f6f4fe;
+  color: #333b52;
+  padding-block: 50px 120px;
+  .review-box {
+    background: #1f235b;
+    max-width: 800px;
+    width: 100%;
+    color: #ffffff;
+    border-radius: 16px;
+    /* overflow: hidden; */
+    box-shadow: 40px 28px 80px rgba(0, 0, 0, 0.08);
+    border: 8px solid;
+    position: relative;
+  }
+  .reviewer-img {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 8px solid #ffffff;
+    position: absolute;
+    z-index: 10;
+    left: -50px;
+    bottom: -30px;
+    height: 190px;
+  }
+`;
