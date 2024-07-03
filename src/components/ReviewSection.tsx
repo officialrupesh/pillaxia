@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ReviewSectionWrapper } from "./styled-components/common.styled";
 import Image from "next/image";
+import ScrollAnimation from "react-animate-on-scroll";
+import data from "../../data";
 
 const ReviewSection = () => {
 
@@ -41,32 +43,41 @@ const ReviewSection = () => {
             <ReviewSectionWrapper>
 
                 <div className="container">
-                    <div className="section-header text-center">
+                    <ScrollAnimation  animateIn="fadeInUp" duration={2} delay={0} className="section-header text-center smooth-animate">
                         <h2 color="#02004B">
                             Customer's Reviews
                         </h2>
                         <p>What Our Customers Are Saying</p>
 
-                    </div>
+                    </ScrollAnimation>
                     <Slider {...settings}>
-                        <div className="review-box-wrapper d-flex justify-content-center">
-                            <div className="review-box d-flex align-items-center">
+                        {
+                            data?.reviewData?.map((review,index)=>{
+                                return (
+                                    <>
+                                        <div key={index} className="review-box-wrapper d-flex justify-content-center">
+                                            <ScrollAnimation animateIn="fadeIn" duration={2} animateOut="slideInLeft" className=" smooth-animate review-box d-flex align-items-center">
 
-                                <div className="reviewer-img">
-                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
-                                </div>
-                                <div className="reviewer-details">
-                                    <h4 className="fw-bold">
-                                        Debbie Hagenes
-                                    </h4>
-                                    <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                    <h5 className="fw-normal d-flex flex-wrap align-items-center" style={{ color: "#B9C8F3",gap:"16px" }}><Image height={28} width={140}  alt="ratings" src={"/images/rating-star.png"}/> 5.0 rating</h5>
+                                                <ScrollAnimation animateIn="fadeIn" delay={300} className="reviewer-img smooth-animate">
+                                                    <Image src={review?.reviewerImg} alt="reviewer image" height={190} width={160} />
+                                                </ScrollAnimation>
+                                                <div className="reviewer-details">
+                                                    <h4 className="fw-bold">
+                                                        {review?.reviewerName}
+                                                    </h4>
+                                                    <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >{review?.reviewersReview}</p>
+                                                    <h5 className="fw-normal d-flex flex-wrap align-items-center" style={{ color: "#B9C8F3", gap: "16px" }}><Image height={28} width={140} alt="ratings" src={review?.starImg} /> {review?.starValue}</h5>
 
 
-                                </div>
+                                                </div>
 
-                            </div>
-                        </div>
+                                            </ScrollAnimation>
+                                        </div>
+                                    </>
+                                )
+                            })
+                        }
+                     
 
 
 

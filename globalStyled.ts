@@ -68,6 +68,7 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 11px;
 }
 .btn-join{
     background: #25AFFC !important;
@@ -75,11 +76,13 @@ h6{
     color: #ffffff !important;
     &:hover{
         background:#25AFFC;
+        box-shadow: 1px 1px 20px 1px rgb(37 175 252 / 80%);
     }
 }
 .btn-gradient{
     background: linear-gradient(to right, #3967F5 0%, #77F3FD 100%);
     color: #ffffff;
+    border-radius: 5px;
     &:hover{
         background: linear-gradient(to left, #3967F5 0%, #77F3FD 100%);;
     }
@@ -87,6 +90,10 @@ h6{
     
 }
 
+.btn-size-lg{
+    min-width: 260px;
+    min-height: 56px;
+}
 
 .section-header{
     h2 {
@@ -98,5 +105,19 @@ h6{
   p{
     font-size: 1.6rem;
   }
+}
+
+/* .smooth-animate{
+    transition: 0.6s ease-out;
+    &-quick{
+        transition: 0.3s ease-out;
+    }
+} */
+@media screen and (max-width: 992px){
+    .btn-size-lg{
+        min-width: 160px;
+        min-height: 48px;
+    }
+    
 }
 `;

@@ -8,6 +8,8 @@ import ContactSection from "@/components/ContactSection";
 import AiDrivenSection from "@/components/AiDrivenSection";
 import HeroSection from "@/components/HeroSection";
 import ChoosePillaxia from "@/components/ChoosePillaxia";
+import "animate.css/animate.compat.css"
+
 
 export default function Home() {
   return (
