@@ -17,7 +17,7 @@ const MenuIcon = styled.div`
 const Bar = styled.div<BarProps>`
   width: 100%;
   height: 4px;
-  background-color: currentColor;
+  background-color: ${({ isOpen }) => (isOpen ? '#ffffff' : '#79CFFF ')};;
   transition: all 0.3s ease-in-out;
 
   &:nth-child(1) {

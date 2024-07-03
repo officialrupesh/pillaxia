@@ -3,6 +3,7 @@ import Header from "./Header"
 import { HeroSectionWrapper } from "./styled-components/common.styled"
 import Link from "next/link"
 import ScrollAnimation from "react-animate-on-scroll"
+import { ArrowRightIcon } from "../../public/images/icons/Icons"
 
 const HeroSection = () => {
   return (
@@ -12,7 +13,7 @@ const HeroSection = () => {
         <div className="container">
           <section className="hero-section-container row">
             <div className="col-12 col-lg-8">
-              <ScrollAnimation className="d-flex">
+              <ScrollAnimation className="d-flex" animatePreScroll={false} animateIn="slideInDown" duration={2}>
                 <div className="path-bg d-flex align-items-center">
                   <div className="dot-before"></div>
                   <h6>Your Path to better health</h6>
@@ -20,16 +21,16 @@ const HeroSection = () => {
                 </div>
               </ScrollAnimation>
 
-              <ScrollAnimation animatePreScroll={false}  animateIn="slideInUp" duration={1} className="section-header" style={{ marginBottom:"25px" }}>
+              <ScrollAnimation animatePreScroll={false}  animateIn="slideInUp" duration={2} className="section-header" style={{ marginBottom:"25px" }}>
                 <h2 style={{ color: "#000000" }}>Transform medication managament with <span>Pillaxia</span></h2>
                 <p className="hero-section-desc" style={{ fontSize: "1.6rem", color:"#333B52" }}>
                   Seamlessly manage medications with confidence, through enhanced daily adherence and fostering collaboration among patients, caregivers, and healthcare providers. Experience a healthier, more connected care journey with Pillaxia.
                 </p>
               </ScrollAnimation>
-              <ScrollAnimation animatePreScroll={false}  animateIn="bounceInLeft" duration={1} delay={3}>
+              <ScrollAnimation animatePreScroll={false}  animateIn="bounceInLeft" duration={2} delay={4}>
                 <a href="#">
-                  <button className="btn btn-join" style={{ marginBottom: "80px", minWidth: "260px", minHeight: "56px" }}>
-                    Get Started
+                  <button className="btn btn-join btn-size-lg" style={{ marginBottom: "80px" }}>
+                    Get Started <span className="ms-3"><ArrowRightIcon /> </span>
                   </button>
                 </a>
               </ScrollAnimation>

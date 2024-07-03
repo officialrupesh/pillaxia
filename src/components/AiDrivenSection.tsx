@@ -21,7 +21,7 @@ const AiDrivenSection = () => {
                         <div className="section-body">
                             <div className="row g-4">
                                 <div className="col-12 col-md-6 col-lg-4">
-                                    <ScrollAnimation animateIn="ZoomOutUp" delay={0} className="smooth-animate-quick feature-wrapper">
+                                    <ScrollAnimation animateIn="bounceInLeft" delay={0} className="smooth-animate-quick feature-wrapper">
                                         <div className="feature-header d-flex align-items-center">
                                             <div className="feature-icon d-flex justify-content-center align-items-center">
                                                 <BellIcon />
@@ -34,7 +34,7 @@ const AiDrivenSection = () => {
 
                                         </p>
                                     </ScrollAnimation>
-                                    <ScrollAnimation animateIn="ZoomOutUp" delay={200} className="smooth-animate-quick feature-wrapper mb-0">
+                                    <ScrollAnimation animateIn="bounceInLeft" delay={200} className="smooth-animate-quick feature-wrapper mb-0">
                                         <div className="feature-header d-flex align-items-center">
                                             <div className="feature-icon d-flex justify-content-center align-items-center">
                                                 <TrackIcon />
@@ -58,7 +58,7 @@ const AiDrivenSection = () => {
 
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-4">
-                                    <ScrollAnimation animateIn="ZoomOutUp" delay={400} className="smooth-animate-quick feature-wrapper">
+                                    <ScrollAnimation animateIn="bounceInRight" delay={400} className="smooth-animate-quick feature-wrapper">
                                         <div className="feature-header d-flex align-items-center">
                                             <div className="feature-icon d-flex justify-content-center align-items-center">
                                                 <BallotCheckIcon />
@@ -70,7 +70,7 @@ const AiDrivenSection = () => {
                                             Pillaxia's Symptoms and side effects tracker allows for the systematic logging of health details over time, providing users and their care team with valuable insights into how medications are affecting them and facilitating more informed medical decisions.
                                         </p>
                                     </ScrollAnimation>
-                                    <ScrollAnimation animateIn="ZoomOutUp" delay={600} className="smooth-animate-quick feature-wrapper">
+                                    <ScrollAnimation animateIn="bounceInRight" delay={600} className="smooth-animate-quick feature-wrapper">
                                         <div className="feature-header d-flex align-items-center">
                                             <div className="feature-icon d-flex justify-content-center align-items-center">
                                                 <ShareIcon />
