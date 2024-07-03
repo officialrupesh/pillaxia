@@ -99,4 +99,12 @@ h6{
     font-size: 1.6rem;
   }
 }
+
+.smooth-animate{
+    transition: 0.6s ease-out;
+    &-quick{
+        transition: 0.3s ease-out;
+    }
+}
+
 `;
