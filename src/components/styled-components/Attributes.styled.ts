@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const AttributesStyled = styled.div`
+const AttributesStyled = styled.section`
   background: #02004b;
   color: #ffffff;
   padding-block: 50px 75px;

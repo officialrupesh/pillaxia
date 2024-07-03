@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContactSectionStyled = styled.div`
+export const ContactSectionStyled = styled.section`
   background: radial-gradient(circle, #070086 0%, #050069 40%, #02004b 100%);
   padding-block: 60px;
   img {

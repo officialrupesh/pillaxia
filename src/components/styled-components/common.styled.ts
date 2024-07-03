@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PillaxiaWorkWrapper = styled.div`
+export const PillaxiaWorkWrapper = styled.section`
   background: #0e0e2c;
   padding-block: 50px;
   .section-header {
@@ -62,7 +62,7 @@ export const HeroSectionWrapper = styled.section`
   }
   .hero-section-container {
     color: #333b52;
-    padding-bottom: 120px;
+    padding-bottom: 75px;
     .section-header {
       h2 {
         margin-bottom: 16px;

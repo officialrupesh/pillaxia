@@ -102,7 +102,7 @@ const AiDrivenSection = () => {
 
                         </div>
 
-                        <div className="download-links-wrapper d-flex justify-content-center ">
+                        <div className="download-links-wrapper d-flex flex-wrap justify-content-center ">
                             <Link href={"#"} className="d-inline-block">
                                 <Image src={"/images/appstore.png"} alt="app store icon" height={57} width={201} />
                             </Link>

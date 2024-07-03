@@ -9,7 +9,7 @@ const HeroSection = () => {
       <HeroSectionWrapper className="hero-section-wrapper">
           <Header />
         <div className="container">
-          <div className="hero-section-container row">
+          <section className="hero-section-container row">
             <div className="col-12 col-lg-8">
               <div className="d-flex">
                 <div className="path-bg d-flex align-items-center">
@@ -33,7 +33,7 @@ const HeroSection = () => {
               <div>
                 <div className="associated-programs-wrapper">
                 <h6 className="fw-medium">Pillaxia has participated in a number of programmes and accelerators</h6>
-                  <div className="associated-programs d-flex flex-wrap gap-3">
+                  <div className="associated-programs d-flex flex-wrap gap-3 justify-content-center justify-cotent-md-start">
                     <Link href={"#"} className="associated-program">
                       <Image className="img-fluid" src={"/images/associated-program-1.png"} alt="associated program logo" height={55} width={170} />
                     </Link>
@@ -56,7 +56,7 @@ const HeroSection = () => {
               </div>
 
             </div>
-          </div>
+          </section>
 
         </div>
 

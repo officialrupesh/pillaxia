@@ -40,7 +40,7 @@ export const MobileHeaderStyled = styled.header`
     left: 0;
     height: 100%;
     z-index: 9999999;
-    width: 100vw;
+
     transform: translate(200%,0);
     transition: 0.4s ease-out;
     

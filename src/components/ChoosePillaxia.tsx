@@ -1,8 +1,11 @@
+import data from "../../data"
 import { ChoosePillaxiaStyled } from "./styled-components/ChoosePillaxia.styled"
+import { PillaxiaWorkWrapper } from "./styled-components/common.styled"
 
 const ChoosePillaxia = () => {
     return (
         <>
+
             <ChoosePillaxiaStyled>
                 <div className="container">
                     <div className="section-header text-center">
@@ -18,6 +21,52 @@ const ChoosePillaxia = () => {
                     </div>
                 </div>
             </ChoosePillaxiaStyled>
+
+            <PillaxiaWorkWrapper>
+                <div className="container">
+                    <div className="section-header text-center">
+                        <h2><span>How</span> Pillaxia works</h2>
+                        <p>3 easy steps</p>
+                    </div>
+                    <div className="row g-4">
+                        {
+                            data.workingSteps.map((item, index) => (
+                                <>
+                                    <div className="col-12 col-md-6 col-lg-4 ">
+                                        <div className="card-steps-wrapper h-100">
+                                            <div className="card-step-header d-flex">
+                                                <div className="card-step-count d-flex justify-content-center align-items-center me-3">
+                                                    {item?.stepNumber}
+                                                </div>
+                                                <h6 className="card-step-title fw-semibold ">
+                                                    {item?.title}
+                                                </h6>
+
+                                            </div>
+                                            <div className="card-step-body">
+                                                {
+                                                    item?.bodyTitle &&
+                                                    <h6 className="fw-semibold">{item?.bodyTitle}</h6>
+                                                }
+                                                {item?.description}
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </>
+                            ))
+                        }
+
+
+                    </div>
+
+                </div>
+
+            </PillaxiaWorkWrapper>
         </>
     )
 }

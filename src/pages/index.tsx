@@ -16,8 +16,8 @@ export default function Home() {
     <Attributes />
     <AiDrivenSection />
     <ChoosePillaxia />
-    <ReviewSection />
     <ContactSection />
+    <ReviewSection />
       <Footer />
     </>
   );

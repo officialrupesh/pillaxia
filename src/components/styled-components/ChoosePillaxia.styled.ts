@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ChoosePillaxiaStyled = styled.section`
   color: #333b52;
   background: #F6F4FE;
-  padding-block: 60px;
+  padding-block: 50px 75px;
   .section-header{
     margin-bottom: 50px;
   }

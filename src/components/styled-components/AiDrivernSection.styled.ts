@@ -4,7 +4,7 @@ export const AiDrivenSectionStyled = styled.section`
   .ai-driven-wrapper {
     background: url("images/ai-driven-bg.png") no-repeat;
     background-size: cover;
-    padding-block: 60px 100px;
+    padding-block: 50px 75px;
     .section-header {
       margin-bottom: 60px;
       /* margin-bottom: clamp(30px, 4vw, 60px); */
@@ -52,6 +52,9 @@ export const AiDrivenSectionStyled = styled.section`
     }
 
     @media screen and (max-width: 992px) {
+      .section-header{
+        margin-bottom: 30px;
+      }
       .feature {
         &-wrapper {
           margin-block: 10px;
@@ -67,10 +70,11 @@ export const AiDrivenSectionStyled = styled.section`
       }
     }
   }
+
   .app-download-section {
     background: url("images/download-bg.png") no-repeat;
     background-size: cover;
-    padding-block: 80px;
+    padding-block: 50px 75px;
 
     .download-links-wrapper {
       gap: 20px;
