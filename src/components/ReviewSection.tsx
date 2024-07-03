@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ReviewSectionWrapper } from "./styled-components/common.styled";
 import Image from "next/image";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const ReviewSection = () => {
 
@@ -41,20 +42,20 @@ const ReviewSection = () => {
             <ReviewSectionWrapper>
 
                 <div className="container">
-                    <div className="section-header text-center">
+                    <ScrollAnimation  animateIn="fadeInUp" duration={2} delay={0} className="section-header text-center smooth-animate">
                         <h2 color="#02004B">
                             Customer's Reviews
                         </h2>
                         <p>What Our Customers Are Saying</p>
 
-                    </div>
+                    </ScrollAnimation>
                     <Slider {...settings}>
                         <div className="review-box-wrapper d-flex justify-content-center">
-                            <div className="review-box d-flex align-items-center">
+                            <ScrollAnimation  animateIn="fadeIn" duration={2} animateOut="slideInLeft" className=" smooth-animate review-box d-flex align-items-center">
 
-                                <div className="reviewer-img">
+                                <ScrollAnimation animateIn="fadeIn" delay={300} className="reviewer-img smooth-animate">
                                     <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
-                                </div>
+                                </ScrollAnimation>
                                 <div className="reviewer-details">
                                     <h4 className="fw-bold">
                                         Debbie Hagenes
@@ -65,7 +66,7 @@ const ReviewSection = () => {
 
                                 </div>
 
-                            </div>
+                            </ScrollAnimation>
                         </div>
 
 
