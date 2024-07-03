@@ -39,7 +39,8 @@ a{
 }
 
 h2{
-    font-size: 5.4rem;
+    /* font-size: 5.4rem; */
+        font-size: clamp(30px, 4vw, 54px);
     line-height: 1.3;
     font-weight: 700;
 }

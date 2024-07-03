@@ -50,7 +50,7 @@ const AiDrivenSection = () => {
 
 
                                 </div>
-                                <div className="col-12 col-md-6 col-lg-4">
+                                <div className="col-12 col-md-6 col-lg-4 d-none d-lg-block">
                                     <div className="features-display-screen">
                                         <Image className="img-fluid" src={'/images/features-screen-bg.png'} height={625} width={340} alt="features screen"/>
 

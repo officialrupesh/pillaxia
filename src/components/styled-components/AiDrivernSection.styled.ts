@@ -6,7 +6,8 @@ export const AiDrivenSectionStyled = styled.section`
     background-size: cover;
     padding-block: 60px 100px;
     .section-header {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
+      /* margin-bottom: clamp(30px, 4vw, 60px); */
       h2 {
         color: #02004b;
         span {
@@ -21,9 +22,9 @@ export const AiDrivenSectionStyled = styled.section`
       }
     }
     .feature {
-        &-wrapper{
-            margin-block: 114px;
-        }
+      &-wrapper {
+        margin-block: 114px;
+      }
       &-header {
         color: #25affc;
         margin-bottom: 16px;
@@ -41,13 +42,29 @@ export const AiDrivenSectionStyled = styled.section`
         height: 150px;
       }
     }
-    .features-display-screen{
-        max-width: 340px;
-        width: 100%;
-        border: 12px solid rgba(255,255,255,0.6);
-        border-radius: 30px;
-        overflow: hidden;
-        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    .features-display-screen {
+      max-width: 340px;
+      width: 100%;
+      border: 12px solid rgba(255, 255, 255, 0.6);
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    @media screen and (max-width: 992px) {
+      .feature {
+        &-wrapper {
+          margin-block: 10px;
+        }
+      }
+    }
+    @media screen and (max-width: 762px) {
+      .feature-header {
+        margin-bottom: 10px;
+      }
+      .feature-body {
+        height: unset;
+      }
     }
   }
   .app-download-section {

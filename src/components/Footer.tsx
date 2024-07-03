@@ -66,7 +66,7 @@ const Footer = () => {
 
                                             </li>
                                         </ul>
-                                        <div className="social-media-wrapper d-flex gap-4">
+                                        <div className="d-flex gap-4 justify-content-center justify-content-sm-start social-media-wrapper">
                                             <Link href={"#"} className="social-media-item d-flex justify-content-center align-items-center">
                                                 <FacebookIcon />
                                             </Link>
