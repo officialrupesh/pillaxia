@@ -33,7 +33,7 @@ const ChoosePillaxia = () => {
                         {
                             data.workingSteps.map((item, index) => (
                                 <>
-                                       <ScrollAnimation  className="col-12 col-md-6 col-lg-4 smooth-animate" animateIn="fadeIn" animateOut="fadeInLeftBig"  delay={(index*100) + 500}>
+                                       <ScrollAnimation key={index}  className="col-12 col-md-6 col-lg-4 smooth-animate" animateIn="fadeIn" animateOut="fadeInLeftBig"  delay={(index*200) + 200}>
                                             <div className="card-steps-wrapper h-100">
                                                 <div className="card-step-header d-flex">
                                                     <div className="card-step-count d-flex justify-content-center align-items-center me-3">

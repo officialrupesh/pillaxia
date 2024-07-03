@@ -12,25 +12,27 @@ const HeroSection = () => {
         <div className="container">
           <section className="hero-section-container row">
             <div className="col-12 col-lg-8">
-              <div className="d-flex">
+              <ScrollAnimation animatePreScroll={false} animateIn="slideInDown" duration={1} className="d-flex">
                 <div className="path-bg d-flex align-items-center">
                   <div className="dot-before"></div>
                   <h6>Your Path to better health</h6>
                   <div className="dot-before"></div>
                 </div>
-              </div>
+              </ScrollAnimation>
 
-              <ScrollAnimation animatePreScroll={false} initiallyVisible={true} animateIn="fadeIn" duration={1} className="section-header" style={{ marginBottom:"25px" }}>
+              <ScrollAnimation animatePreScroll={false}  animateIn="slideInUp" duration={1} className="section-header" style={{ marginBottom:"25px" }}>
                 <h2 style={{ color: "#000000" }}>Transform medication managament with <span>Pillaxia</span></h2>
                 <p className="hero-section-desc" style={{ fontSize: "1.6rem", color:"#333B52" }}>
                   Seamlessly manage medications with confidence, through enhanced daily adherence and fostering collaboration among patients, caregivers, and healthcare providers. Experience a healthier, more connected care journey with Pillaxia.
                 </p>
               </ScrollAnimation>
-              <a href="#">
-                <button className="btn btn-join" style={{ marginBottom: "80px", minWidth: "260px", minHeight: "56px" }}>
-                  Get Started
-                </button>
-              </a>
+              <ScrollAnimation animatePreScroll={false}  animateIn="bounceInLeft" duration={2} delay={3}>
+                <a href="#">
+                  <button className="btn btn-join" style={{ marginBottom: "80px", minWidth: "260px", minHeight: "56px" }}>
+                    Get Started
+                  </button>
+                </a>
+              </ScrollAnimation>
               <div>
                 <div className="associated-programs-wrapper">
                 <h6 className="fw-medium">Pillaxia has participated in a number of programmes and accelerators</h6>

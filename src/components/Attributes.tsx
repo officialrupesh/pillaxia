@@ -1,6 +1,7 @@
 import Image from "next/image"
 import AttributesStyled from "./styled-components/Attributes.styled"
 import ScrollAnimation from "react-animate-on-scroll"
+import data from "../../data"
 
 const Attributes = () => {
     return (
@@ -14,45 +15,27 @@ const Attributes = () => {
                     </ScrollAnimation>
 
                     <div className="row g-5">
-                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={500} className="col-12 col-lg-4 col-md-6 smooth-animate">
-                            <div className="card-wrapper d-flex flex-column justify-content-center align-items-center">
-                                <div className="card-img d-flex justify-content-center align-items-center">
-                                    <Image src={"/images/user-centric 1.png"} alt="card image" width={50} height={50} />
-                                </div>
-                                <h5 className="card-title fw-semibold">User-Centric</h5>
-                                <p className="card-details text-center">
-                                    Designed with the end-user in mind, Pillaxia is intuitive and easy to navigate,
-                                    making it accessible to individuals of all ages.
-                                </p>
+                        {
+                            data?.attributeData?.map((attribute, index) => {
+                                return (
+                                    <>
+                                        <ScrollAnimation animateIn="fadeIn" animateOut="bounceInLeft" delay={(index*200) + 300} className="col-12 col-lg-4 col-md-6 smooth-animate">
+                                            <div className="card-wrapper d-flex flex-column justify-content-center align-items-center">
+                                                <div className="card-img d-flex justify-content-center align-items-center">
+                                                    <Image src={attribute?.cardIcon} alt="card image" width={50} height={50} />
+                                                </div>
+                                                <h5 className="card-title fw-semibold">{attribute?.cardTitle}</h5>
+                                                <p className="card-details text-center">
+                                                    {attribute?.cardDescription}
+                                                </p>
 
-                            </div>
-                        </ScrollAnimation>
-                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={700} className="col-12 col-lg-4 col-md-6 smooth-animate">
-                            <div className="card-wrapper d-flex flex-column justify-content-center align-items-center">
-                                <div className="card-img d-flex justify-content-center align-items-center">
-                                    <Image src={"/images/user-centric 1.png"} alt="card image" width={50} height={50} />
-                                </div>
-                                <h5 className="card-title fw-semibold">User-Centric</h5>
-                                <p className="card-details text-center">
-                                    Designed with the end-user in mind, Pillaxia is intuitive and easy to navigate,
-                                    making it accessible to individuals of all ages.
-                                </p>
+                                            </div>
+                                        </ScrollAnimation>
+                                    </>
+                                )
+                            })
+                        }
 
-                            </div>
-                        </ScrollAnimation>
-                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={900} className="col-12 col-lg-4 col-md-6 smooth-animate">
-                            <div className="card-wrapper d-flex flex-column justify-content-center align-items-center">
-                                <div className="card-img d-flex justify-content-center align-items-center">
-                                    <Image src={"/images/user-centric 1.png"} alt="card image" width={50} height={50} />
-                                </div>
-                                <h5 className="card-title fw-semibold">User-Centric</h5>
-                                <p className="card-details text-center">
-                                    Designed with the end-user in mind, Pillaxia is intuitive and easy to navigate,
-                                    making it accessible to individuals of all ages.
-                                </p>
-
-                            </div>
-                        </ScrollAnimation>
 
                     </div>
 

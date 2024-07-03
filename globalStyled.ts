@@ -100,11 +100,11 @@ h6{
   }
 }
 
-.smooth-animate{
+/* .smooth-animate{
     transition: 0.6s ease-out;
     &-quick{
         transition: 0.3s ease-out;
     }
-}
+} */
 
 `;
