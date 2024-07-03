@@ -96,23 +96,30 @@ export const HeroSectionWrapper = styled.section`
 export const ReviewSectionWrapper = styled.section`
   background: #f6f4fe;
   color: #333b52;
-  padding-block: 50px 120px;
+  padding-block: 50px 60px;
+  .section-header{
+    margin-bottom: 60px;
+  }
   .custom-dots {
     gap: 9px;
     .slick-active div {
       background: #333B52;
     }
     div {
-      margin-top: 50px;
+      /* margin-top: 50px; */
       width: 32px;
       height: 6px;
       background: #25affc;
       border-radius: 4px;
     }
   }
+  .review-box-wrapper{
+    overflow: hidden;
+  }
   .review-box {
     background: #1f235b;
     max-width: 800px;
+    margin-bottom: 100px;
     width: 100%;
     padding: 30px;
     color: #ffffff;
@@ -121,21 +128,60 @@ export const ReviewSectionWrapper = styled.section`
     box-shadow: 40px 28px 80px rgba(0, 0, 0, 0.08);
     border: 8px solid;
     position: relative;
+    justify-content: end;
+  }
+  .reviewer-details{
+    max-width: calc(100% - 180px);
+    h4{
+      margin-bottom: 32px;
+    }
+    p{
+      margin-bottom: 32px;
+    }
   }
   .reviewer-img {
     border-radius: 16px;
+    height: 190px;
     overflow: hidden;
     border: 8px solid #ffffff;
     position: absolute;
     z-index: 10;
     left: -50px;
     bottom: -30px;
-    height: 190px;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
-  .reviewer-img-mobile {
-    position: unset;
-    min-width: 160px;
-    margin-right: 40px;
-    visibility: hidden;
+
+  @media screen and (max-width: 992px) {
+    h5{
+      font-size: 1.6rem;
+    }
+    .review-box-wrapper{
+      margin-top: 100px;
+      overflow: visible;
+    }
+    .reviewer-img{
+      position: unset;
+      margin-top: -100px;
+    }
+    .review-box{
+      flex-direction: column;
+      padding-top: 0;
+      margin-bottom: 50px;
+    }
+    .reviewer-details{
+      max-width: unset;
+      margin-top: 20px;
+      text-align: center;
+      h5{
+        justify-content: center;
+      }
+    }
+    
   }
+
 `;

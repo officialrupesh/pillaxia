@@ -10,7 +10,7 @@ const ReviewSection = () => {
 
 
     const settings = {
-        // adaptiveHeight: true,
+        adaptiveHeight: true,
         dots: true,
         infinite: true,
         slidesToShow: 1,
@@ -51,9 +51,7 @@ const ReviewSection = () => {
                     <Slider {...settings}>
                         <div className="review-box-wrapper d-flex justify-content-center">
                             <div className="review-box d-flex align-items-center">
-                                <div className="reviewer-img reviewer-img-mobile">
-                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
-                                </div>
+
                                 <div className="reviewer-img">
                                     <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
                                 </div>
@@ -62,53 +60,15 @@ const ReviewSection = () => {
                                         Debbie Hagenes
                                     </h4>
                                     <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                    <h5 className="fw-normal" style={{ color: "#B9C8F3" }}>5.0 rating</h5>
+                                    <h5 className="fw-normal d-flex flex-wrap align-items-center" style={{ color: "#B9C8F3",gap:"16px" }}><Image height={28} width={140}  alt="ratings" src={"/images/rating-star.png"}/> 5.0 rating</h5>
 
 
                                 </div>
 
                             </div>
                         </div>
-                        <div className="review-box-wrapper d-flex justify-content-center">
-                            <div className="review-box d-flex align-items-center">
-                                <div className="reviewer-img reviewer-img-mobile">
-                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
-                                </div>
-                                <div className="reviewer-img">
-                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
-                                </div>
-                                <div className="reviewer-details">
-                                    <h4 className="fw-bold">
-                                        Debbie Hagenes
-                                    </h4>
-                                    <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                    <h5 className="fw-normal" style={{ color: "#B9C8F3" }}>5.0 rating</h5>
 
 
-                                </div>
-
-                            </div>
-                        </div>
-                        <div className="review-box-wrapper d-flex justify-content-center">
-                            <div className="review-box d-flex align-items-center">
-                                <div className="reviewer-img reviewer-img-mobile">
-                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
-                                </div>
-                                <div className="reviewer-img">
-                                    <Image src={'/images/reviewer-img.png'} alt="reviewer image" height={190} width={160} />
-                                </div>
-                                <div className="reviewer-details">
-                                    <h4 className="fw-bold">
-                                        Debbie Hagenes
-                                    </h4>
-                                    <p className="fw-medium" style={{ color: "#B9C8F3", fontSize: "16px" }} >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                    <h5 className="fw-normal" style={{ color: "#B9C8F3" }}>5.0 rating</h5>
-
-
-                                </div>
-
-                            </div>
-                        </div>
 
 
 
