@@ -32,7 +32,7 @@ export const MobileHeaderStyled = styled.header`
   padding-block: 10px;
   margin-bottom: 50px;
   .nav-section {
-    background: #79CFFF url(/images/hero-bg.png) no-repeat;
+    background: #79CFFF url(/images/hero-bg.webp) no-repeat;
     background-size: cover;
     position: fixed;
     width: 100%;

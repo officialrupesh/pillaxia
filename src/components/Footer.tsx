@@ -9,7 +9,7 @@ const Footer = () => {
             <FooterWrapper className="footer-wrapper    ">
                 <div className="container">
                     <div className="footer-top">
-                        <div className="row">
+                        <div className="row  me-0">
                             <div className="col-lg-4 col-12  mb-4">
                                 <Image alt="logo" src="/images/logo.png" width={170} height={70} sizes="100vw" />
                                 <p>Pillaxia's mission is to cultivate a sustainable ecosystem of care and support 
@@ -18,8 +18,8 @@ const Footer = () => {
                                 </p>
                             </div>
                             <div className="col-lg-8 col-12">
-                                <div className="row g-4 text-center text-sm-start">
-                                    <div className=" col-12 col-sm-6 col-md-4 footer-item">
+                                <div className="row me-0 g-4 text-center text-sm-start">
+                                    <div className=" col-12 col-sm-6 col-md-4 footer-item me-0">
                                         <h3>Useful Links</h3>
                                         <ul className="list-unstyled">
                                             <li>
@@ -36,7 +36,7 @@ const Footer = () => {
                                             <li> <Link href={"#"}>Contact Us</Link></li>
                                         </ul>  
                                     </div>
-                                    <div className="col-12 col-sm-6 col-md-4 footer-item">
+                                    <div className="col-12 col-sm-6 col-md-4 footer-item me-0">
                                         <h3>Card Section</h3>
                                         <ul className="list-unstyled">
                                             <li>
@@ -54,7 +54,7 @@ const Footer = () => {
                                         </ul>
                                     </div>
 
-                                    <div className="col-12 col-sm-6 col-md-4 footer-item">
+                                    <div className="col-12 col-sm-6 col-md-4 footer-item me-0">
                                         <h3>Contact us</h3>
                                         <ul className="list-unstyled mb-3">
                                             <li>

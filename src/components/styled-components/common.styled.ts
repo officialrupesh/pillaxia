@@ -38,7 +38,7 @@ export const PillaxiaWorkWrapper = styled.section`
 
 
 export const HeroSectionWrapper = styled.section`
-  background: url("/images/hero-bg.png") no-repeat;
+  background: url("/images/hero-bg.webp") no-repeat;
   background-size: cover;
   .path-bg {
     background: #ffffff;
@@ -75,19 +75,28 @@ export const HeroSectionWrapper = styled.section`
       background: #ffffff;
     }
 
-    .associated-programs{
-      &-wrapper{
-        h6{
+    .associated-programs {
+      &-wrapper {
+        h6 {
           margin-bottom: 24px;
         }
       }
-      .associated-program{
+      .associated-program {
         border-radius: 10px;
         overflow: hidden;
-        border: 3px solid  rgba(255,255,255,0.75);
+        border: 3px solid rgba(255, 255, 255, 0.75);
         background: #ffffff;
         margin-right: 24px;
       }
+    }
+  }
+  .get-started {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .get-started {
+      margin-bottom: 40px;
     }
   }
 `;

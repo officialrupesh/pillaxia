@@ -1,6 +1,8 @@
 import reviewImg from "./public/images/reviewer-img.png";
 import reviewStarImg from "./public/images/rating-star.png";
 import userCentricImg from "./public/images/userCentric.png";
+import innovateImg from "./public/images/bulb-img.png";
+import positiveImg from "./public/images/think-img.png";
 const data = {
   workingSteps: [
     {
@@ -72,16 +74,15 @@ const data = {
         "Designed with the end-user in mind, Pillaxia is intuitive and easy to navigate, making it accessible to individuals of all ages.",
     },
     {
-      cardIcon: userCentricImg,
-      cardTitle: "User-Centric",
+      cardIcon: innovateImg,
+      cardTitle: "Innovative",
       cardDescription:
-        "Designed with the end-user in mind, Pillaxia is intuitive and easy to navigate, making it accessible to individuals of all ages.",
+        "Pillaxia leverages cutting-edge technology through AI-driven reminders and real-time tracking to simplify medication management.",
     },
     {
-      cardIcon: userCentricImg,
-      cardTitle: "User-Centric",
-      cardDescription:
-        "Designed with the end-user in mind, Pillaxia is intuitive and easy to navigate, making it accessible to individuals of all ages.",
+      cardIcon: positiveImg,
+      cardTitle: "Positive Health Outcomes",
+      cardDescription: "By improving medication adherence, Pillaxia directly contributes to better health outcomes.",
     },
   ],
 };

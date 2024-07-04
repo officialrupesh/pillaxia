@@ -18,10 +18,13 @@ body{
      overflow-x: hidden!important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "Inter Variable", sans-serif;
+    /* font-family: "Inter Variable", sans-serif; */
+      font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
     font-weight: 400;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    
     /* background: #fafafa; */
     color: #ffffff;
 }

@@ -19,7 +19,7 @@ const AiDrivenSection = () => {
                         </ScrollAnimation>
 
                         <div className="section-body">
-                            <div className="row g-4">
+                            <div className="row g-4 me-0">
                                 <div className="col-12 col-md-6 col-lg-4">
                                     <ScrollAnimation animateIn="bounceInLeft" delay={0} className="smooth-animate-quick feature-wrapper">
                                         <div className="feature-header d-flex align-items-center">
@@ -51,7 +51,7 @@ const AiDrivenSection = () => {
 
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-                                    <ScrollAnimation animateIn="bounceInRight" delay={1} className="smooth-animate  features-display-screen">
+                                    <ScrollAnimation animateIn="bounceInRight" duration={1} delay={1} className="smooth-animate  features-display-screen">
                                         <Image className="img-fluid" src={'/images/features-screen-bg.png'} height={625} width={340} alt="features screen"/>
                                     </ScrollAnimation>
                                     
