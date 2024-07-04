@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="container">
           <section className="hero-section-container row">
             <div className="col-12 col-lg-8">
-              <ScrollAnimation className="d-flex" initiallyVisible={true} animateIn="slideInDown" duration={2}>
+              <ScrollAnimation className="d-flex"  animateIn="slideInDown" duration={2}>
                 <div className="path-bg d-flex align-items-center">
                   <div className="dot-before"></div>
                   <h6>Your Path to better health</h6>
@@ -21,20 +21,20 @@ const HeroSection = () => {
                 </div>
               </ScrollAnimation>
 
-              <ScrollAnimation initiallyVisible={true}  animateIn="slideInUp" duration={2} className="section-header" style={{ marginBottom:"25px" }}>
+              <ScrollAnimation   animateIn="slideInUp" duration={2} className="section-header" style={{ marginBottom:"25px" }}>
                 <h2 style={{ color: "#000000" }}>Transform medication managament with <span>Pillaxia</span></h2>
                 <p className="hero-section-desc" style={{ fontSize: "1.6rem", color:"#333B52" }}>
                   Seamlessly manage medications with confidence, through enhanced daily adherence and fostering collaboration among patients, caregivers, and healthcare providers. Experience a healthier, more connected care journey with Pillaxia.
                 </p>
               </ScrollAnimation>
-              <ScrollAnimation initiallyVisible={true}  animateIn="bounceInLeft" duration={2} delay={4}>
+              <ScrollAnimation   animateIn="bounceInLeft" duration={2} delay={4}>
                 <a href="#">
                   <button className="btn btn-join btn-size-lg" style={{ marginBottom: "80px" }}>
                     Get Started <span className="ms-3"><ArrowRightIcon /> </span>
                   </button>
                 </a>
               </ScrollAnimation>
-              <ScrollAnimation  initiallyVisible={true} >
+              <ScrollAnimation   >
                 <div className="associated-programs-wrapper">
                 <h6 className="fw-medium">Pillaxia has participated in a number of programmes and accelerators</h6>
                   <div className="associated-programs d-flex flex-wrap gap-3 justify-content-center justify-cotent-md-start">
@@ -54,7 +54,7 @@ const HeroSection = () => {
               </ScrollAnimation>
 
             </div>
-            <ScrollAnimation initiallyVisible={true} animateIn="bounceInDown" duration={2}  className="col-12 col-lg-4 d-lg-block d-none">
+            <ScrollAnimation  animateIn="bounceInDown" duration={2}  className="col-12 col-lg-4 d-lg-block d-none">
               <div className="hero-img d-flex justify-content-center align-items-center">
                 <Image className="img-fluid" src={"/images/hero-img.png"} alt="Hero section image" height={625} width={340}/>
 
