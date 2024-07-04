@@ -21,7 +21,7 @@ const HeroSection = () => {
                 </div>
               </ScrollAnimation>
 
-              <ScrollAnimation   animateIn="slideInUp" duration={2} className="section-header" style={{ marginBottom:"25px" }}>
+              <ScrollAnimation   animateIn="slideInUp"  className="section-header" style={{ marginBottom:"25px" }}>
                 <h2 style={{ color: "#000000" }}>Transform medication managament with <span>Pillaxia</span></h2>
                 <p className="hero-section-desc" style={{ fontSize: "1.6rem", color:"#333B52" }}>
                   Seamlessly manage medications with confidence, through enhanced daily adherence and fostering collaboration among patients, caregivers, and healthcare providers. Experience a healthier, more connected care journey with Pillaxia.
@@ -34,7 +34,7 @@ const HeroSection = () => {
                   </button>
                 </a>
               </ScrollAnimation>
-              <ScrollAnimation   >
+              <ScrollAnimation  initiallyVisible={true} >
                 <div className="associated-programs-wrapper">
                 <h6 className="fw-medium">Pillaxia has participated in a number of programmes and accelerators</h6>
                   <div className="associated-programs d-flex flex-wrap gap-3 justify-content-center justify-cotent-md-start">
