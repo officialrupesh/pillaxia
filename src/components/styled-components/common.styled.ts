@@ -38,7 +38,7 @@ export const PillaxiaWorkWrapper = styled.section`
 
 
 export const HeroSectionWrapper = styled.section`
-  background: url("/images/hero-bg.png") no-repeat;
+  background: url("/images/hero-bg.webp") no-repeat;
   background-size: cover;
   .path-bg {
     background: #ffffff;

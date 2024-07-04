@@ -14,7 +14,7 @@ const Attributes = () => {
 
                     </ScrollAnimation>
 
-                    <div className="row g-5">
+                    <div className="row g-5 me-0">
                         {
                             data?.attributeData?.map((attribute, index) => {
                                 return (
