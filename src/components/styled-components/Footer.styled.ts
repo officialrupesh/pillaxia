@@ -20,6 +20,11 @@ export const FooterWrapper = styled.div`
           border-radius: 50%;
           background: transparent;
           color: #ffffff;
+          transition: 0.5s ease-in;
+          &:hover {
+            background: #ffffff;
+            color: #333b52;
+          }
         }
       }
     }
