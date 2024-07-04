@@ -56,7 +56,7 @@ const ReviewSection = () => {
                                 return (
                                     <>
                                         <div key={index} className="review-box-wrapper d-flex justify-content-center">
-                                            <ScrollAnimation animateIn="fadeIn" duration={2} animateOut="slideInLeft" className=" smooth-animate review-box d-flex align-items-center">
+                                            <ScrollAnimation animateIn="fadeIn" duration={2} className=" smooth-animate review-box d-flex align-items-center">
 
                                                 <ScrollAnimation animateIn="fadeIn" duration={2} delay={100} className="reviewer-img smooth-animate">
                                                     <Image src={review?.reviewerImg} alt="reviewer image" height={190} width={160} />

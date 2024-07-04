@@ -53,7 +53,7 @@ const HeroSection = () => {
               </ScrollAnimation>
 
             </div>
-            <ScrollAnimation initiallyVisible={true} animateIn="bounceInRight" duration={2}  className="col-12 col-lg-4 d-lg-block d-none">
+            <ScrollAnimation initiallyVisible={true} animateIn="bounceInDown" duration={2}  className="col-12 col-lg-4 d-lg-block d-none">
               <div className="hero-img d-flex justify-content-center align-items-center">
                 <Image className="img-fluid" src={"/images/hero-img.png"} alt="Hero section image" height={625} width={340}/>
 
