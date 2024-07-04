@@ -19,7 +19,7 @@ const AiDrivenSection = () => {
                         </ScrollAnimation>
 
                         <div className="section-body">
-                            <div className="row g-4">
+                            <div className="row g-4 me-0">
                                 <div className="col-12 col-md-6 col-lg-4">
                                     <ScrollAnimation animateIn="bounceInLeft" delay={0} className="smooth-animate-quick feature-wrapper">
                                         <div className="feature-header d-flex align-items-center">

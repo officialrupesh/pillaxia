@@ -9,7 +9,7 @@ const ContactSection = () => {
         <>
             <ContactSectionStyled>
                 <div className="container">
-                    <div className="row">
+                    <div className="row me-0">
                         <div className="col-12 col-lg-6 d-flex flex-column align-items-center d-lg-block">
                             <ScrollAnimation animateIn="fadeInUp" duration={2} delay={0} className="smooth-animate section-header ">
                                 <h2><span>Contact</span> Us</h2>

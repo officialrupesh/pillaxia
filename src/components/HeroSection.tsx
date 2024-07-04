@@ -11,7 +11,7 @@ const HeroSection = () => {
       <HeroSectionWrapper className="hero-section-wrapper">
           <Header />
         <div className="container">
-          <section className="hero-section-container row">
+          <section className="hero-section-container row me-0">
             <div className="col-12 col-lg-8">
               <ScrollAnimation className="d-flex"  animateIn="slideInDown" duration={2}>
                 <div className="path-bg d-flex align-items-center">

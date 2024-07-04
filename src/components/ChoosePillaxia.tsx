@@ -29,7 +29,7 @@ const ChoosePillaxia = () => {
                         <h2><span>How</span> Pillaxia works</h2>
                         <p>3 easy steps</p>
                     </ScrollAnimation>
-                    <div className="row g-4">
+                    <div className="row g-4 me-0">
                         {
                             data.workingSteps.map((item, index) => (
                                 <>
