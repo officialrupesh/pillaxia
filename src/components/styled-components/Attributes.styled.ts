@@ -22,6 +22,7 @@ const AttributesStyled = styled.section`
     color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
+    height: 100%;
 
     .card {
       &-img {

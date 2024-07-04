@@ -37,7 +37,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <title>Pillaxia | Homepage</title>
+         
+        </Head>
         <body>
           <Main />
           <NextScript />

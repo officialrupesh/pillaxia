@@ -19,7 +19,7 @@ const Footer = () => {
                             </div>
                             <div className="col-lg-8 col-12">
                                 <div className="row g-4 text-center text-sm-start">
-                                    <div className=" col-12 col-sm-6 col-md-4 footer-item">
+                                    <div className=" col-12 col-sm-6 col-md-4 footer-item me-0">
                                         <h3>Useful Links</h3>
                                         <ul className="list-unstyled">
                                             <li>
@@ -36,7 +36,7 @@ const Footer = () => {
                                             <li> <Link href={"#"}>Contact Us</Link></li>
                                         </ul>  
                                     </div>
-                                    <div className="col-12 col-sm-6 col-md-4 footer-item">
+                                    <div className="col-12 col-sm-6 col-md-4 footer-item me-0">
                                         <h3>Card Section</h3>
                                         <ul className="list-unstyled">
                                             <li>
@@ -54,7 +54,7 @@ const Footer = () => {
                                         </ul>
                                     </div>
 
-                                    <div className="col-12 col-sm-6 col-md-4 footer-item">
+                                    <div className="col-12 col-sm-6 col-md-4 footer-item me-0">
                                         <h3>Contact us</h3>
                                         <ul className="list-unstyled mb-3">
                                             <li>

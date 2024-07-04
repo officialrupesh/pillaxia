@@ -11,4 +11,10 @@ export const ChoosePillaxiaStyled = styled.section`
     border: 10px solid #ffffff;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
   }
+  @media screen and( max-width: 992px) {
+    .section-header{
+      margin-bottom: 30px;
+    }
+    
+  }
 `;

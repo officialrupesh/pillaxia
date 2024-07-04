@@ -19,8 +19,8 @@ const Attributes = () => {
                             data?.attributeData?.map((attribute, index) => {
                                 return (
                                     <>
-                                        <ScrollAnimation animateIn="fadeIn" animateOut="bounceInLeft" delay={(index*200) + 300} className="col-12 col-lg-4 col-md-6 smooth-animate">
-                                            <div className="card-wrapper d-flex flex-column justify-content-center align-items-center">
+                                        <ScrollAnimation animateIn="fadeIn" duration={2} delay={(index*200) + 300} className="col-12 col-lg-4 col-md-6 smooth-animate">
+                                            <div className="card-wrapper d-flex flex-column justify-content-start align-items-center">
                                                 <div className="card-img d-flex justify-content-center align-items-center">
                                                     <Image src={attribute?.cardIcon} alt="card image" width={50} height={50} />
                                                 </div>
