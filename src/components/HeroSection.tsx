@@ -42,11 +42,12 @@ const HeroSection = () => {
                       <Image className="img-fluid" src={"/images/associated-program-1.png"} alt="associated program logo" height={55} width={170} />
                     </Link>
                     <Link href={"#"} className="associated-program">
-                      <Image className="img-fluid" src={"/images/associated-program-1.png"} alt="associated program logo" height={55} width={170} />
+                      <Image className="img-fluid" src={"/images/thriv-logo.png"} alt="associated program logo" height={55} width={170} />
                     </Link>
                     <Link href={"#"} className="associated-program">
-                      <Image className="img-fluid" src={"/images/associated-program-1.png"} alt="associated program logo" height={55} width={170} />
+                      <Image className="img-fluid" src={"/images/frontier-logo.png"} alt="associated program logo" height={55} width={170} />
                     </Link>
+                   
 
                  </div>
                 </div>
