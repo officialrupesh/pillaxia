@@ -12,7 +12,7 @@ const ChoosePillaxia = () => {
                 <div className="container">
                     <div className="smooth-animate section-header text-center">
                         <h2>Why Choose <span>Pillaxia</span></h2>
-                        <p>Pillaxia is your all-in-one health management app designed to empower you to take charge of your well-being. Our intuitive platform helps you monitor, manage, and improve your health through a range of innovative features tailored to meet your unique needs.</p>
+                        <p>"Pillaxia is your all-in-one health management app designed to empower you to take charge of your well-being. Our intuitive platform helps you monitor, manage, and improve your health through a range of innovative features tailored to meet your unique needs."</p>
                     </div>
                     <div className="video-wrapper">
                         {/* <video width="100%" height="100%"  controls >

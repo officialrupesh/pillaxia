@@ -18,7 +18,7 @@ const Footer = () => {
                                 </p>
                             </div>
                             <div className="col-lg-8 col-12">
-                                <div className="row me-0 g-4 text-center text-sm-start">
+                                <div className="row me-0 g-4 text-center text-sm-start mb-4">
                                     <div className=" col-12 col-sm-6 col-md-4 footer-item me-0">
                                         <h3>Useful Links</h3>
                                         <ul className="list-unstyled">
@@ -32,12 +32,12 @@ const Footer = () => {
                                             </li>
                                             <li><Link href={"#"}>Services</Link>
                                                 </li>
-                                            <li><Link href={"#"}>Blog</Link></li>
+                                            {/* <li><Link href={"#"}>Blog</Link></li> */}
                                             <li> <Link href={"#"}>Contact Us</Link></li>
                                         </ul>  
                                     </div>
                                     <div className="col-12 col-sm-6 col-md-4 footer-item me-0">
-                                        <h3>Card Section</h3>
+                                        <h3>Support</h3>
                                         <ul className="list-unstyled">
                                             <li>
                                                 <Link href={"#"}>FAQs</Link>
@@ -47,8 +47,9 @@ const Footer = () => {
                                                 <Link href={"#"}>Support</Link>
 
                                             </li>
-                                            <li><Link href={"#"}>How it works</Link>
-                                            </li>
+                                            {/* <li>
+                                                <Link href={"#"}>How it works</Link>
+                                            </li> */}
                                             <li><Link href={"#"}>Terms & conditions</Link></li>
                                             <li> <Link href={"#"}>Privacy policy</Link></li>
                                         </ul>
@@ -60,11 +61,11 @@ const Footer = () => {
                                             <li>
                                                 <Link href={"mailto:connect@pillaxia.com"} >connect@pillaxia.com</Link>
                                             </li>
-                                            <li>
+                                            {/* <li>
 
                                                 <Link href={"tel:+1-900-123 4567"}>+1-900-123 4567</Link>
 
-                                            </li>
+                                            </li> */}
                                         </ul>
                                         <div className="d-flex gap-4 justify-content-center justify-content-sm-start social-media-wrapper">
                                             <Link href={"#"} className="social-media-item d-flex justify-content-center align-items-center">

@@ -11,16 +11,16 @@ const ContactSection = () => {
                 <div className="container">
                     <div className="row me-0">
                         <div className="col-12 col-lg-6 d-flex flex-column align-items-center d-lg-block">
-                            <ScrollAnimation animateIn="fadeInUp" duration={2} delay={0} className="smooth-animate section-header ">
-                                <h2><span>Contact</span> Us</h2>
+                            <div className="section-header ">
+                                <h2><span>Connect</span></h2>
                                 <p>Start with Pillaxia today</p>
 
-                            </ScrollAnimation>
-                            <ScrollAnimation animateIn="fadeIn" duration={2} delay={2} className="contact-img">
+                            </div>
+                            <div className="contact-img">
                                 <Image className="img-fluid" src={"/images/contact-avatar.png"} alt="contact avatar" height={500} width={430} layout="100vw" />
-                            </ScrollAnimation>
+                            </div>
                         </div>
-                        <ScrollAnimation animateIn="fadeInRight" duration={2} className="col-12 col-lg-6 mt-5 mt-lg-0">
+                        <div className="col-12 col-lg-6 mt-5 mt-lg-0">
                             <div className="form-wrapper">
                                 <div className="form-item d-flex flex-column">
                                     <label id="fullName"><p>Full Name</p></label>
@@ -47,7 +47,7 @@ const ContactSection = () => {
 
                             </div>
 
-                        </ScrollAnimation>
+                        </div>
 
                     </div>
 
