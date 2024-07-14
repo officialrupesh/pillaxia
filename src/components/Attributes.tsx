@@ -8,18 +8,18 @@ const Attributes = () => {
         <>
             <AttributesStyled>
                 <div className="container">
-                    <ScrollAnimation animateIn="fadeInUp" duration={2} delay={0} className="smooth-animate section-header text-center">
-                        <h2><span>Unique Attributes</span> of Pillaxia</h2>
-                        <p>Create an account and get started using Pillaxia, with full access </p>
+                    <div className="smooth-animate section-header text-center">
+                        <h2><span>The Future of </span> Medication Management</h2>
+                        <p>Empowering your health journey with every reminder</p>
 
-                    </ScrollAnimation>
+                    </div>
 
                     <div className="row g-5 me-0">
                         {
                             data?.attributeData?.map((attribute, index) => {
                                 return (
                                     <>
-                                        <ScrollAnimation animateIn="fadeIn" duration={2} delay={(index*200) + 300} className="col-12 col-lg-4 col-md-6 smooth-animate">
+                                        <div className="col-12 col-lg-4 col-md-6 smooth-animate">
                                             <div className="card-wrapper d-flex flex-column justify-content-start align-items-center">
                                                 <div className="card-img d-flex justify-content-center align-items-center">
                                                     <Image src={attribute?.cardIcon} alt="card image" width={50} height={50} />
@@ -30,7 +30,7 @@ const Attributes = () => {
                                                 </p>
 
                                             </div>
-                                        </ScrollAnimation>
+                                        </div>
                                     </>
                                 )
                             })

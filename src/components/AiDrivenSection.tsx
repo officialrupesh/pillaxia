@@ -11,9 +11,9 @@ const AiDrivenSection = () => {
 
                 <div className="ai-driven-wrapper">
                     <div className="container">
-                        
+
                         <ScrollAnimation animateIn="fadeInUp" duration={1} delay={0} className="smooth-animate section-header text-center">
-                            <h2>AI - <span>Driven</span></h2>
+                            <h2>Medication Management <span>Made Easy</span></h2>
                             <p>Let Angela handle your medication scheduling</p>
 
                         </ScrollAnimation>
@@ -30,8 +30,7 @@ const AiDrivenSection = () => {
 
                                         </div>
                                         <p className="feature-body">
-                                            simplify care for complex conditions and ensure adherence
-
+                                            Your AI assistant, Angela, delivers personalised visual and auditory prompts, specifying medication details and instructions, transforming the app into a user-friendly and supportive tool for medication management.
                                         </p>
                                     </ScrollAnimation>
                                     <ScrollAnimation animateIn="bounceInLeft" delay={200} className="smooth-animate-quick feature-wrapper mb-0">
@@ -52,9 +51,9 @@ const AiDrivenSection = () => {
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-4 d-none d-lg-block">
                                     <ScrollAnimation animateIn="bounceInRight" duration={1} delay={1} className="smooth-animate  features-display-screen">
-                                        <Image className="img-fluid" src={'/images/features-screen-bg.png'} height={625} width={340} alt="features screen"/>
+                                        <Image className="img-fluid" src={'/images/features-screen-bg.png'} height={625} width={340} alt="features screen" />
                                     </ScrollAnimation>
-                                    
+
 
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-4">
@@ -92,15 +91,15 @@ const AiDrivenSection = () => {
                 </div>
                 <div className="app-download-section">
                     <div className="container">
-                        <ScrollAnimation animateIn="fadeInUp" duration={1} delay={0} className="smooth-animate section-header text-center" style={{ marginBottom: "30px" }}>
+                        <div className="smooth-animate section-header text-center" style={{ marginBottom: "30px" }}>
                             <h2>
                                 <span>Best way to</span> manage your your Health Recovery.
                             </h2>
                             <p>Create an account and get started using Pillaxia, with full access </p>
 
-                        </ScrollAnimation>
+                        </div>
 
-                        <ScrollAnimation animateIn="fadeIn" delay={1} className="download-links-wrapper d-flex flex-wrap justify-content-center ">
+                        <div className="download-links-wrapper d-flex flex-wrap justify-content-center ">
                             <Link href={"#"} className="d-inline-block">
                                 <Image src={"/images/appstore.png"} alt="app store icon" height={57} width={201} />
                             </Link>
@@ -108,7 +107,7 @@ const AiDrivenSection = () => {
                                 <Image src={"/images/playstore.png"} alt="playstore icon" height={57} width={201} />
                             </Link>
 
-                        </ScrollAnimation>
+                        </div>
 
 
                     </div>
