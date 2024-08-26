@@ -32,7 +32,7 @@ const ReviewSection = () => {
 
             </div>
         ),
-        customPaging: (i: any) => (
+        customPaging: () => (
             <div>
             </div>
         )
